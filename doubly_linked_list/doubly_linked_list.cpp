@@ -24,7 +24,7 @@ void insertfirst(type element){
   newnode->data = element;
   newnode->next = NULL;
   newnode->previous = NULL;
-  if(count == 0 or first == NULL){
+  if(count == 0 || first == NULL){
     first = last = newnode;
   }
   else{

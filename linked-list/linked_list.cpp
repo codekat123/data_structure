@@ -85,8 +85,17 @@ type gettail(){
   return tail->item;
 }
 
-
-
+void reverse(){
+  node*previous = NULL;
+  node*current =head;
+  node*next = current->next;
+  while(current != NULL){
+    next = current->next;
+    current->next = previous;
+    previous = current;
+    current = next;
+  }
+}
 
 
 void removefirst(){
